@@ -29,7 +29,7 @@ pipeline{
             
             steps{
                 
-               echo "Realizado exitosamente"
+               echo "Realizado exitosamente $ENVIRONMENT"
             }
         }
         
