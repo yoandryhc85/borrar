@@ -18,7 +18,7 @@ pipeline{
 
              sh 'cp /var/lib/jenkins/workspace/Job_secundario_test/output/somefile .'
              sh 'ENVIRONMENT=$(cat somefile)'
-             sh ' echo "$ENVIRONMENT" '
+             sh ' echo $ENVIRONMENT '
              
                   
             }
