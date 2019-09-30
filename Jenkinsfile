@@ -12,32 +12,14 @@ pipeline{
         }
          stage('Job de cambio de variables'){
             
-            steps{
-               
+            steps{              
              
-
              sh 'cp /var/lib/jenkins/workspace/Job_secundario_test/output/somefile .'
-             sh 'ENVIRONMENT=$(cat somefile)'
-             sh 'export ambiente=$ENVIRONMENT'
-                    
-             echo $ambiente
+             sh 'ENVIRONMENT=$(cat somefile)'             
+             echo $ENVIRONMENT
             }
 
          }
-             
-                 
-               
-       
-        
-       stage ('Remove inactive environment tables PROD-A') {
-            when {
-            expression { $ENVIRONMENT == 'Development' }
-            }
-              steps {
-                echo "Removing the inactive environment tables from PROD-B"
-               
-              }
-            }
-    }
+     }
    
  }
