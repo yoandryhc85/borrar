@@ -13,11 +13,11 @@ pipeline{
             
             steps{
                
-             dir('/var/lib/jenkins/workspace/Job_secundario_test/output'){
+             
 
-             unstash 'first-stash'
+             sh 'cp /var/lib/jenkins/workspace/Job_secundario_test/output/somefile .'
 
-            }
+             
                 
                echo "Esto es una prueba"
             }
