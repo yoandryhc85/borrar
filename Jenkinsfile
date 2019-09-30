@@ -20,15 +20,13 @@ pipeline{
              sh  'ENVIRONMENT=$(cat somefile)'
              
                   
-       }
-             
-            
-
-             
-                
-                
             }
-        }
+
+         }
+             
+                 
+                
+       
         
         stage('Job de confirmacion'){
             
