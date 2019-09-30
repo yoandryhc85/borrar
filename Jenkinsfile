@@ -1,11 +1,6 @@
 pipeline{
     agent any
-    environment{
-        ENVIRONMENT=$(cat somefile)
-    
-    }
-    
-    
+     
     stages{
         
         stage('Job primario de test'){
@@ -22,7 +17,8 @@ pipeline{
              
 
              sh 'cp /var/lib/jenkins/workspace/Job_secundario_test/output/somefile .'
-             echo "$ENVIRONMENT"
+             sh 'ENVIRONMENT=$(cat somefile)'
+             sh ' echo "$ENVIRONMENT" '
              
                   
             }
