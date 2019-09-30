@@ -18,6 +18,7 @@ pipeline{
 
              sh 'cp /var/lib/jenkins/workspace/Job_secundario_test/output/somefile .'
              sh  ' ENVIRONMENT=$(cat somefile) '
+             echo "Realizado exitosamente $ENVIRONMENT"
 
              
                 
@@ -29,7 +30,7 @@ pipeline{
             
             steps{
                 
-               echo "Realizado exitosamente $ENVIRONMENT"
+               echo "Realizado exitosamente"
             }
         }
         
