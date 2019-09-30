@@ -15,7 +15,7 @@ pipeline{
                
              dir('/var/lib/jenkins/workspace/Job_secundario_test'){
 
-             echo "Hola direccion"
+             sh 'pwd'
 
             }
                 
