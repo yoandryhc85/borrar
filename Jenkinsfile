@@ -15,7 +15,7 @@ pipeline{
                
              dir('/var/lib/jenkins/workspace/Job_secundario_test'){
 
-             unstash "first-stash"
+             echo "Hola direccion"
 
             }
                 
