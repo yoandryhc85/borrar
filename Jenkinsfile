@@ -13,7 +13,7 @@ pipeline{
             
             steps{
                
-             dir("/var/lib/jenkins/workspace/Job_secundario_test/output"){
+             dir('/var/lib/jenkins/workspace/Job_secundario_test/output'){
 
              unstash "first-stash"
 
