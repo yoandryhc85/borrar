@@ -10,7 +10,7 @@ pipeline{
                 build job: 'Job_secundario_test', wait: true
             }
         }
-         stage('Job de unstash'){
+         stage('Job de cambio de variables'){
             
             steps{
                
