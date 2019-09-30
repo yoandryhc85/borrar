@@ -15,7 +15,7 @@ pipeline{
                
              dir('/var/lib/jenkins/workspace/Job_secundario_test'){
 
-             sh 'pwd'
+             unstash 'first-stash'
 
             }
                 
