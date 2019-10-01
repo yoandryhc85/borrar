@@ -15,8 +15,8 @@ pipeline{
             steps{              
              
              sh 'cp /var/lib/jenkins/workspace/Job_secundario_test/output/somefile .'
-             sh 'ENVIRONMENT=$(cat somefile)'  
-             echo " Nuestro ambiente es: $ENVIRONMENT "  
+             sh 'export ENVIRONMENT=$(sed -n '1p' somefile)'
+             echo  $ENVIRONMENT   
          
             }
 
