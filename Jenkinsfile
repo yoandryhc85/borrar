@@ -14,10 +14,11 @@ pipeline{
             
             steps{              
              
-             sh 'cp /var/lib/jenkins/workspace/Job_secundario_test/output/somefile .'
+             sh '''
+             cp /var/lib/jenkins/workspace/Job_secundario_test/output/somefile .
              export ENVIRONMENT=$(sed -n '1p' somefile)
              echo  $ENVIRONMENT   
-         
+             '''
             }
 
          }
